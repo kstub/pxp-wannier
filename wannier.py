@@ -275,9 +275,9 @@ class HaldaneModel:
             draw_3d_plot(ax, fig, plot_array, pad_value)
             
         elif plot_type == "both":
-            fig = plt.figure(figsize=(12, 5))
-            ax0 = fig.add_subplot(1, 2, 1, projection='3d')
-            ax1 = fig.add_subplot(1, 2, 2)
+            fig = plt.figure(figsize=(5, 12))
+            ax0 = fig.add_subplot(2, 1, 1, projection='3d')
+            ax1 = fig.add_subplot(2, 1, 2)
 
             draw_3d_plot(ax0, fig, plot_array, pad_value)
             draw_2d_plot(ax1, fig, plot_array)
